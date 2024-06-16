@@ -1,0 +1,184 @@
+body {
+  color: #fff;
+  overflow-y: auto;
+}
+
+.navbar-brand img {
+  vertical-align: middle;
+  margin-right: 3px;
+  height: 30px;
+}
+
+.custom-img {
+  max-width: 30%; 
+  height: auto; 
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(20, 20, 20, 0.671);
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+section {
+  padding: 200px 0;
+  text-align: center;
+  min-height: 110vh;
+}
+
+section:last-of-type {
+  padding-bottom: 300px;
+}
+
+.bg-dark {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar-nav li a {
+  border-radius: 30px;
+  transition: all 0.5s ease-in;
+}
+
+.navbar-nav li.active a {
+  background: rgba(57, 105, 41, 0.822);
+  color: #000000 !important;
+}
+
+@media (max-width: 768px) {
+  section:first-of-type {
+    padding-top: 80px;
+  }
+
+  .navbar-nav {
+    padding: 0px;
+  }
+
+  .navbar-nav li a {
+    padding-left: 20px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  section:first-of-type {
+    padding-top: 100px;
+  }
+
+  .navbar {}
+
+  .navbar-theme {
+    background: none !important;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-nav li a {
+    color: #fff;
+    margin: 0;
+    padding: 10px 20px !important;
+  }
+}
+
+.btn-theme {
+  background-color: rgb(100, 141, 63);
+  border: 1px solid rgba(70, 255, 9, 0.538);
+  color: #000000;
+}
+
+.color-theme {
+  color: rgba(80, 174, 40, 0.659);
+}
+
+#home-slides {
+  margin: 20px 0;
+}
+
+h1 {
+  color: olive;
+}
+
+h2 {
+  color: #d9ff00;
+}
+
+
+#videoPlayerContainer {
+  display: none;
+  position: fixed;
+  bottom: calc(5% + 3cm);
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 56%;
+  max-width: 31cm;
+  border: 5px solid #888888af;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  z-index: 1000;
+  color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#videoPlayer {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #videoPlayerContainer {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-small {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-small {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img-small {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-small {
+    max-width: 50%;
+    height: auto;
+  }
+}
