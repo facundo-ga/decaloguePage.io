@@ -1,7 +1,7 @@
 body {
   color: #ffffff;
   overflow-y: auto;
-}
+ }
 
 .navbar-brand img {
   vertical-align: middle;
@@ -145,8 +145,8 @@ h2 {
   bottom: calc(5% + 3cm);
   left: 50%;
   transform: translate(-50%, 0);
-  width: 56%;
-  max-width: 31cm;
+  width: 80%;
+  max-width: 560px;
   border: 5px solid #888888af;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.874);
@@ -328,4 +328,43 @@ h2 {
   }
   
 
+  }
+
+  @media (max-width: 768px) {
+    #videoPlayerContainer {
+      width: 90%;
+      bottom: 10%;
+      max-width: none;
+    }
+  }
+  
+  
+  @media (orientation: landscape) {
+    #videoPlayerContainer {
+      width: 70%;
+      bottom: 5%;
+    }
+  
+    @media (max-width: 768px) {
+      #videoPlayerContainer {
+        width: 90%;
+        bottom: 10%;
+      }
+    }
+  }
+  
+  @media (orientation: portrait) {
+    #videoPlayerContainer {
+      width: 90%;
+      bottom: 10%;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    #videoPlayerContainer {
+      width: 100%;
+      bottom: 15%;
+      padding: 10px;
+    }
   }
