@@ -46,7 +46,7 @@ section:last-of-type {
 
 .bg-dark {
   color: #fff;
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.641) !important;
 }
 
 
@@ -56,8 +56,14 @@ section:last-of-type {
 }
 
 .navbar-nav li.active a {
-  background: rgba(57, 105, 41, 0.822);
-  color: #000000 !important;
+  background:  rgba(54, 108, 35, 0.822);
+  color: #ffffff !important;
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
 .navbar-brand {
@@ -257,3 +263,69 @@ h2 {
     padding: 5px 10px; 
   }
 }
+
+@media (max-width: 768px) {
+  h1 {
+  color: #000000; 
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  }
+  
+  h2 {
+  color: olive; 
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #e3fd01,
+  1px -1px 0 #e3fd01,
+  -1px 1px 0 #e3fd01,
+  1px 1px 0 #e3fd01;
+  }
+  
+  p {
+  color: #000000; 
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #ffffff,
+  1px -1px 0 #ffffff,
+  -1px 1px 0 #ffffff,
+  1px 1px 0 #ffffff;
+  }
+  }
+  
+  @media (max-width: 480px) {
+  h1 {
+  color: olive; 
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  }
+  
+  h2 {
+  color: olive; 
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #e3fd01,
+  1px -1px 0 #e3fd01,
+  -1px 1px 0 #e3fd01,
+  1px 1px 0 #e3fd01;
+  }
+  
+  p {
+  color: rgb(126, 123, 123); 
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  }
+  
+
+  }
