@@ -177,4 +177,27 @@ function toggleVideoPlayerContainer() {
     
     toggleVideoPlayerContainer();
   }
+
+function reloadPageOnce() {
+    if (localStorage.getItem('reloadOnce') !== 'true') {
+      localStorage.setItem('reloadOnce', 'true'); 
+      setTimeout(function() {
+        window.location.reload(true); 
+      }, 5000); 
+    }
+  }
+
+  
+  function handleNavbarMouseOver() {
+    localStorage.removeItem('reloadOnce'); 
+    reloadPageOnce(); 
+  }
+
+ 
+  document.addEventListener('DOMContentLoaded', function() {
+    var navbarLinks = document.querySelectorAll('.navbar-nav a');
+    navbarLinks.forEach(function(link) {
+      link.addEventListener('mouseover', handleNavbarMouseOver);
+    });
+  });
   
