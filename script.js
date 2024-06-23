@@ -178,7 +178,8 @@ function toggleVideoPlayerContainer() {
     toggleVideoPlayerContainer();
   }
 
-function reloadPageOnce() {
+
+  function reloadPageOnce() {
     if (localStorage.getItem('reloadOnce') !== 'true') {
       localStorage.setItem('reloadOnce', 'true'); 
       setTimeout(function() {
@@ -187,17 +188,20 @@ function reloadPageOnce() {
     }
   }
 
-  
-  function handleNavbarMouseOver() {
-    localStorage.removeItem('reloadOnce'); 
-    reloadPageOnce(); 
+
+  function handleNavbarClick() {
+    
+    var mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (mediaQuery.matches) {
+      
+      reloadPageOnce();
+    }
   }
 
- 
+
   document.addEventListener('DOMContentLoaded', function() {
     var navbarLinks = document.querySelectorAll('.navbar-nav a');
     navbarLinks.forEach(function(link) {
-      link.addEventListener('mouseover', handleNavbarMouseOver);
+      link.addEventListener('click', handleNavbarClick);
     });
   });
-  
