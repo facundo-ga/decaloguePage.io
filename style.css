@@ -86,3 +86,9 @@ p {
 	margin-bottom: 1.4em;
 	line-height: var(--lh);
 }
+
+.line{
+    border-bottom: 2px solid var(--tc);
+    margin-bottom: 4.5rem;
+}
+
