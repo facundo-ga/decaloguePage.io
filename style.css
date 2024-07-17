@@ -12,13 +12,13 @@ body{
 
 
 .sprite {
-/*   background-image: url(https://www.supremo.co.uk/wp-content/themes/supremo/assets/images/transitions/extinguisher.png); */
+
   
   background-image: url(https://tympanus.net/Tutorials/CSSMaskTransition/img/urban-sprite.png);
     
   width: 3000%;
   height: 100%;
-/*   left: 50%; */
+
   top: 50%;
   transform: translate(0%, -50%) translateZ(0);
   position: absolute;
@@ -27,28 +27,7 @@ body{
   background-repeat: no-repeat;
 }
 
-/**
- * The animation property (and its values):
- * 
- *  "flap"
- *     The name of the keyframe in use.
- *
- *  "1s" 
- *     The duration of the animation from
- *     beginning to end. 
- *
- *  "steps(25)"
- *     Important! Break our keyframe motion
- *     into 25 equals steps, one for each
- *     sprite position. 
- *
- *  "infinite"
- *     Repeat the animation infinitely.
- * 
- *  "alternate"
- *     With each loop of the animation,
- *     reverse the direction.
- */
+
 .animated {
   -webkit-animation: flap 1.4s steps(30) infinite alternate;
   -moz-animation: flap 1.4s steps(30) infinite alternate;
@@ -57,15 +36,7 @@ body{
   animation: flap 1.4s steps(30) infinite alternate;
 }
 
-/**
- * Keyframes for the animation.
- *
- * We define the beginning and ending
- * background position for our image
- * sprite. This is divided into
- * equal steps by the animation
- * property above.
- */
+
 @-webkit-keyframes flap {
   from { transform: translate(0%, -50%) translateZ(0); }
   to { transform: translate(-100%, -50%) translateZ(0); }
